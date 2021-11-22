@@ -1,0 +1,112 @@
+.step-form-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+
+    & > .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+        padding: 0 15px;
+        border-bottom: 1px solid #c3c3c3;
+
+        .title {
+            font-variant: small-caps;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 15px;
+
+            &.invalid {
+                color: red !important;
+            }
+        }
+
+        .data-of-birth {
+            margin: 40px 0;
+
+            .items {
+                display: flex;
+
+                input {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 1 1 33.3333%;
+                    width: 100%;
+                    padding: 14px 0;
+                    border: 1px solid #c3c3c3;
+                    text-align: center;
+                    font-weight: 400;
+
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    &:not(:last-child) {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+
+        .gender {
+            margin-bottom: 40px;
+
+            .items {
+                display: flex;
+
+                .gender-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 1 1 33.3333%;
+                    width: 100%;
+                    padding: 14px 0;
+                    border: 1px solid #c3c3c3;
+                    text-align: center;
+                    font-variant: small-caps;
+                    background-color: transparent;
+                    cursor: pointer;
+                    transition: 0.25s linear;
+
+                    &:hover,
+                    &:focus {
+                        background-color: rgba($color: #498fe1, $alpha: 0.5);
+                    }
+
+                    &:not(:last-child) {
+                        border-right: none;
+                    }
+
+                    &.selected-gender {
+                        background-color: #498fe1;
+                        border-color: #498fe1;
+                        font-weight: 600;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .how-hear-about-us {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            & > select {
+                padding: 8px 0;
+                text-align: center;
+                font-weight: 300;
+                cursor: pointer;
+                width: 100%;
+
+                option {
+                    font-weight: 300;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

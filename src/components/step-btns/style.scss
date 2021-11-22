@@ -1,0 +1,37 @@
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+
+    button:not(.btn-dashboard) {
+        background-color: transparent;
+        border: 1px solid transparent;
+        transition: 0.25s linear;
+    }
+
+    .btn-next {
+        margin-left: auto;
+        padding: 2px 15px 2px 7px;
+        border-radius: 5px 0 0 5px;
+        border-right: none !important;
+        color: #498fe1;
+
+        &:hover,
+        &:focus {
+            border-color: #498fe1 !important;
+        }
+    }
+
+    .btn-back {
+        color: #c3c3c3;
+        padding: 2px 7px 2px 15px;
+        border-radius: 0 5px 5px 0;
+        border-left: none !important;
+
+        &:hover,
+        &:focus {
+            border-color: #c3c3c3;
+        }
+    }
+}

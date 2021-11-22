@@ -1,0 +1,32 @@
+.step-3 {
+    text-align: center;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & > img {
+        max-width: 100%;
+    }
+
+    .btn-dashboard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        padding: 15px 20px;
+        border: 1px solid #498fe1;
+        border-radius: 5px;
+        color: #498fe1;
+        margin: 0px auto;
+        margin-top: 40px;
+        transition: 0.25s linear;
+
+        &:hover,
+        &:focus {
+            text-shadow: 0 0 1px black;
+            background-color: #498fe1;
+            color: white;
+        }
+    }
+}

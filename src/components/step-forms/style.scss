@@ -1,0 +1,10 @@
+.step,
+.step .step-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+.step-form-content {
+    flex: 1 1 100%;
+}
